@@ -1,0 +1,77 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html  xml:lang="es">
+<head>
+	<title>Obtener coordenadas de google maps</title>
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="Author" content="Agencia Creativa Comunicación Multimedia S.L.L." />
+	<meta name="Description" content="obtener coordenadas de google maps de un punto, buscas la dirección y pinchas sobre el mapa para obtener o conseguir las coordenadas"  />
+	<meta name="keywords" content="obtener coordenadas, maps, google maps, yahoo maps, conseguir coordenadas"  />
+	<meta name="Author" content="Agencia Creativa Comunicación Multimedia S.L.L." />
+	<style type="text/css">
+		label{
+			width: 70px;float:left;
+			padding-top: 3px;
+		}
+	</style>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+
+
+<body onLoad="load();"  onunload="GUnload();">
+<div class="row">
+<div class="col-md-4"></div>
+<div class="col-md-4">
+  	<h1>Carga de Proyecto</h1>
+  	
+	<form role="form" action="insert_proy.php" method="post">
+	 	<div>
+			<p>Dictamen: <input class="form-control" type="text" name="dictamen"></br></p>
+			<p>Fecha: <input class="form-control" type="date" name="fecha"></br></p>
+			<p>Detalle: <input class="form-control" type="text" name="detalle">
+			
+			<p>Comision: </p>
+			<select class="form-control" id="comision"  name="comision">
+				<option value="Derechos Humanos">Derechos Humanos</option>
+				<option value="Ecologia">Ecologia</option>
+				<option value="Gobierno">Gobierno</option>
+				<option value="Obras Publicas">Obras Publicas</option>
+				<option value="Planeamiento">Planeamiento</option>
+				<option value="Presupuesto">Presupuesto</option>
+				<option value="Produccion">Produccion</option>
+				<option value="Salud">Salud</option>
+				<option value="Seguridad">Seguridad</option>
+				<option value="Servicios Publicos">Servicios Publicos</option>
+			</select>
+
+		    <p>Tipo: </p>
+		    <select class="form-control" id="tipo" name="tipo">
+		    	<option value="Ordenanza">Ordenanza</option>
+		    	<option value="Decreto">Decreto</option>
+		    	<option value="Minuta">Minuta</option>
+		    </select>
+		    
+		    <p>Numero: <input class="form-control" type="text" name="numero"></br>
+		   
+		   	<p>link:  <input class="form-control" type="text" name="link"></br>
+		   	 <input class="form-control" type="file" name="file"></p></br>
+
+		   	<p>Comentario: <input class="form-control" type="text" name="comentario"></p></br>
+
+			<input type="submit" class="btn btn-default" value="guardar"></input>
+			<!--<div class="alert alert-warning">Cuidado! Si le das guardar Juani se la come</div>-->
+		</div>
+	</form>
+
+ 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+ </div>
+ <div class="col-md-4s"></div>
+</div>
+</body>
+
+</html>
+	 
+	 
